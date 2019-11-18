@@ -11,7 +11,7 @@ import {
   Sort
 } from './Landing.style';
 
-export class Landing extends Component {
+class Landing extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -62,8 +62,6 @@ export class Landing extends Component {
     let reviews = this.state.selectedHotel.reviews
     let sortedReviews = [...reviews]
     sortedReviews.sort((a, b) => (a.score > b.score)? -1: 1)
-    console.log(sortedReviews, 'sorted');
-    console.log(reviews, 'reviews');
     this.setState(state => ({
       ...state,
       selectedHotel :{
