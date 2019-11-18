@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   loadArray
 } from '../../utils';
-export class CardView extends Component {
+
+class CardView extends Component {
 
   numberOfNights = (e) => {
     const { setDurationAndPrice } = this.props

@@ -4,7 +4,7 @@ import {
   Photo,
   Thumbnails
 } from './Gallery.style';
-export class Gallery extends Component {
+class Gallery extends Component {
   constructor(props){
     super(props)
     this.state = {

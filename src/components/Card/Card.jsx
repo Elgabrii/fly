@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import {
   Base,
-  Picture
 } from './Card.style';
 import { Flex } from '@rebass/grid';
-export class Card extends Component {
+class Card extends Component {
   constructor(props) {
     super(props)
   }

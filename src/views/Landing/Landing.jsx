@@ -80,10 +80,12 @@ class Landing extends Component {
             cardList.map(cardData => <Card key={cardData.id} duration={duration} {...cardData} selectHotel={this.selectHotel} />)
           }
         </CardList>
+        {
+          selectedHotel && 
         <SelectedCard mt={3} flexDirection="column" p={3}>
           <CardView setDurationAndPrice={this.setDurationAndPrice}>
             {({nights, numberOfNights}) => (
-              selectedHotel && 
+              
               <>
                 <h1>{selectedHotel.name}</h1>
                 <Flex>
@@ -111,6 +113,7 @@ class Landing extends Component {
               )}
           </CardView>
         </SelectedCard>
+        }
       </Base>
     );
   }

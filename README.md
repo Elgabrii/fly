@@ -15,3 +15,5 @@ Please, pardon any minor issue you might face as well as the styling as I only h
 -I have used multiple ES6 features including but not necessarily limited to Destructuring, arrow functions and spread operator.
 -No plugin for the image gallery or pagination
 -I haven't used Redux or any kind of complex state management as I didn't find the essential need to do it. So I sticked with some mixture between render props and component composition to narrow down the levels of prop drilling.
+-Some of the components could be turned into stateless functional components but these were auto generated using Emmit and I didn't transform them.
+-Missing PropTypes for the components.
